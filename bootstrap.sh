@@ -11,7 +11,7 @@ systemctl enable docker.service
 systemctl start docker.service
 # docker compose install
 yum install -y python-pip
-yum install -y docker-compose
+pip install -y docker-compose
 yum upgrade python* -y
 git clone https://github.com/JustinGuese/wordpress-docker-compose.git
 cd wordpress-docker-compose
