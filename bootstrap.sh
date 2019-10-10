@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# S3_BUCKET=guesonex-databackup  # < shoud work with source .env
+
+#S3_BUCKET=guesonex-databackup  # < shoud work with source .env
 # git setup
 yum install git -y
 # docker setup
@@ -11,7 +12,7 @@ systemctl enable docker.service
 systemctl start docker.service
 # docker compose install
 yum install -y python-pip
-pip install -y docker-compose
+pip install docker-compose
 yum upgrade python* -y
 git clone https://github.com/JustinGuese/wordpress-docker-compose.git
 cd wordpress-docker-compose

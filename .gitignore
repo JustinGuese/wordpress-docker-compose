@@ -1,4 +1,3 @@
 *.sql
-.env
 wp-data/*
 wp-app/wp-content/*
