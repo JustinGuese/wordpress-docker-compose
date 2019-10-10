@@ -6,7 +6,7 @@ yum install git -y
 # docker setup
 yum install docker -y
 yum install -y yum-utils device-mapper-persistent-data lvm2
-usermod -aG docker $(whoami)
+usermod -aG docker ec2-user  #  $(whoami)
 systemctl enable docker.service
 systemctl start docker.service
 # docker compose install
