@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#S3_BUCKET=guesonex-databackup  # < shoud work with source .env
+S3_BUCKET=guesonex-databackup  # < shoud work with source .env
 # git setup
 yum install git -y
 # docker setup
@@ -14,8 +14,8 @@ systemctl start docker.service
 yum install -y python-pip
 pip install docker-compose
 yum upgrade python* -y
-git clone https://github.com/JustinGuese/wordpress-docker-compose.git
-cd wordpress-docker-compose
+git clone https://github.com/JustinGuese/wordpress-docker-compose.git ~/wordpress-docker-compose/
+cd ~/wordpress-docker-compose
 source .env
 # used to pull current files into machine before starting docker - set up ec2 IAM roles or ~/.aws/ credentials if hosti
 # pulling wp-content
